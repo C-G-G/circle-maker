@@ -11,10 +11,14 @@ $body.on('keydown', function () {
   // create a new div
   var $div = $('<div>');
 
-  $body.append($div).addClass('ball');
+  // add div to body, then assign a class 
+  $body.append($div);
+  $div.addClass('ball');
 
   // place div on the page on random position
-  $('.ball').css('left', randLeft);
-  $('.ball').css('top', randTop);
+  // $('.ball').css('left', randLeft);
+  // $('.ball').css('top', randTop);
+  $div.css('left', randLeft);
+  $div.css('top', randTop);
 
 });
