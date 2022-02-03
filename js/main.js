@@ -2,7 +2,7 @@
 var $body = $('body');
 
 // event listener that listens for keydown
-$body.on('keydown', function () {
+$('html').on('keydown', function () {
 
   // create a new div
   var $div = $('<div>');
