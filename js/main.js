@@ -19,4 +19,10 @@ $('html').on('keydown', function () {
   $div.css('left', Math.random() * 1000);
   $div.css('top', Math.random() * 1000);
 
+  // generate random colour
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  var newRandomColor = '#' + randomColor;
+  // apply the new random colour
+  $div.css('background-color', newRandomColor);
+
 });
